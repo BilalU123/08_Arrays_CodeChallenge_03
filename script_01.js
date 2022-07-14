@@ -33,6 +33,11 @@ function getSentence(arr,op) {
     return str;
 }
 
+// Modul Punktuation
+// output(getPunct("S"));
+// output(getPunct("Q"));
+// output(getPunct("E"));
+// output(getPunct("#!2"));
 function getPunct(op){
     switch (op) {
         case "S":
@@ -42,9 +47,10 @@ function getPunct(op){
         case "E":
             return "!";
         default:
-            return ".";  // TBA
+            return "#Error";  // TBA
     }
 }
+
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
 function output(inputStr) {
